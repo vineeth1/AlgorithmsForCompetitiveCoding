@@ -134,13 +134,7 @@ int main(void) {
 	for (int i = 0; i < n; i++) {
 		v[i] = rand() % 100;
 	}
-
 	
-	// auto start = high_resolution_clock::now();
-	// cout << heap_select(v, 0, n - 1, 1) << endl;
-	// auto stop = high_resolution_clock::now();
-	// cout << "Time taken by heap select: " << duration_cast<milliseconds>(stop - start).count() << " milliseconds" << endl;
-
 	for (int i = 0; i < n; i++) {
 		if(heap_select(v, 0, n - 1, i+1) == quick_select(v, 0, n - 1, i+1)) {
 			cout << "correct" << endl;
