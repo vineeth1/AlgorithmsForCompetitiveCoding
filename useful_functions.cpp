@@ -28,7 +28,7 @@ void segment_tree_update(vector<int> &a, vector<int> &tree, int start, int end, 
     }
 }
 
-int segemnt_tree_query(vector<int> &tree, int start, int end, int node, int l, int r) {
+int segment_tree_query(vector<int> &tree, int start, int end, int node, int l, int r) {
     if (l > end || r > start) {
         return 0;
     } else if (start >= l && end <= r) {
